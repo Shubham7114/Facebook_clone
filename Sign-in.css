@@ -2,16 +2,38 @@ body {
     background-color: white;
 }
 
+.Face_Naming{
+width: 50%;
+display: inline-block;
+}
+.facebook_name {
+    position: absolute;
+    width: 18%;
+    height: 120px;
+    display: inline-block;
+    justify-content: center;
+    margin: 180px 0px 0px 70px;
+}
+.facename_p{ 
+  
+    display: inline-block;
+    width: 90%;
+    height: 120px;
+    margin: 270px 0px 0px 70px;
+}
+
 .container {
-    display: block;
-    align-content: center;
-    margin: auto;
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    margin: 100px 0px 0px 100px ;
+    /* margin-left: 500px; */
     width: 30%;
-    height: 400px;
+    height: 350px;
     border-radius: 8px;
     background-color: rgb(251, 250, 249);
     padding: 20px;
-    box-shadow: 1px 1px 15px rgba(169, 168, 168,0.6);
+    box-shadow: 1px 1px 15px rgba(169, 168, 168, 0.6);
 }
 
 input {
@@ -37,7 +59,7 @@ input {
     color: white;
 }
 
-.create_button{
+.create_button {
     margin-left: 60px;
     background-color: #42b72a;
     border: none;
@@ -46,18 +68,19 @@ input {
     line-height: 48px;
     padding: 0 16px;
     width: 232px;
- 
-}
-.anchor{
-    color: white; 
-    text-decoration: none;
-    
+
 }
 
-.Forget_pass{
-text-decoration: none;
-margin: 15px 0px 8px 120px;
+.anchor {
+    color: white;
+    text-decoration: none;
+
 }
+
+.Forget_pass {
+    margin: 15px 0px 8px 120px;
+}
+
 
 
 p {
@@ -66,9 +89,3 @@ p {
     font-size: 20px;
 }
 
-.facebook_name {
-    width: 18%;
-    height: 120px;
-    display: block;
-    margin: auto;
-}

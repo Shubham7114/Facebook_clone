@@ -1,41 +1,858 @@
-.Navbar{
-    width: 100%;
-    background-color:white;
-    height: 50px;
- 
+body {
+  background-color: #959ca357;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.face_logo{
-    width: 38px;
-    height: 38px;
+
+/* -----------------------Universal CSS ------------------------ */
+
+/* -----------------------------Navigation Bar--------------------------- */
+.Navbar {
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  box-shadow: -5px -1px 15px rgba(169, 168, 168, 0.6);
 }
+
+.face_logo {
+  margin: 5px;
+  width: 38px;
+  height: 38px;
+}
+
 .svg-icon.search-icon {
-    display: inline-block;
-    width: 34px;
-    height: 35px;
-    margin: 0px 0px 1px 5px;
-  
-    /* On hover: blue strokes */
-    &:focus,
-    &:hover {
-      .search-path {
-        stroke: #299ecc;
-      }
-    }
-  
-    /* On click: thicker black strokes  */
-    &:active {
-      .search-path {
-        stroke: #111516;
-        stroke-width: 2px;
-      }
+  display: inline-block;
+  width: 34px;
+  height: 35px;
+  margin: 0px 0px 5px 10px;
+
+  /* On hover: blue strokes */
+  &:focus,
+  &:hover {
+    .search-path {
+      stroke: #299ecc;
     }
   }
 
-.center{
-    overflow: auto;
-    background-color: rgb(95, 2, 31)
+  /* On click: thicker black strokes  */
+  &:active {
+    .search-path {
+      stroke: #111516;
+      stroke-width: 2px;
+    }
+  }
+}
+
+.home_icon {
+  width: 35px;
+  height: 35px;
+  margin-left: 230px;
+  padding: 5px;
+}
+
+.vidio_icon {
+  width: 35px;
+  height: 35px;
+  margin-left: 100px;
+  padding: 5px;
+}
+
+.Nav_icon-center {
+  width: 40px;
+  height: 40px;
+  margin-left: 100px;
+  padding: 5px;
+}
+
+/* ----------------------Main Div Contain 3 div---------------- */
+.Main_div {
+  padding: 0%;
+  margin: 0px;
+  display: flex;
+  height: 535px;
+  /* display: contents; */
+}
+
+/*===========================Aside_Left-start===================================*/
+.left_div {
+  height: 525px;
+  width: 19%;
+  padding: 5px;
+}
+
+/* ------------------------Main Account Profile Picture and text section ------------------------- */
+.asideprofile {
+  height: 45px;
+  width: 90%;
+  margin: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.asideprofile:hover {
+  height: 50px;
+  width: 90%;
+  background-color: white;
+  margin: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.profile_img {
+  position: absolute;
+  display: inline;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin: 5px 10px 10px 5px;
+}
+
+.profile_Text {
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-weight: 600;
+  display: inline-block;
+  font-size: medium;
+  margin: 18px 0px 10px 60px;
+  padding-bottom: 20px;
+}
+
+/* ----------------------------Samll Div For Profile Icon and text Section------------------------- */
+.asideprofile1 {
+  height: 45px;
+  width: 90%;
+  margin: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.asideprofile1:hover {
+  height: 45px;
+  width: 90%;
+  background-color: white;
+  /* border: 1px solid black; */
+  margin: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+/* -------------------------   profile picture_SVG  ------------------ */
+.profile_imgsvg {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  /* border-radius: 10px; */
+  margin: 8px 0px 0px 5px;
+}
+
+/* ------------------------------   profile Text_SVG    --------------------- */
+.profile_Textsvg {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+  font-size: medium;
+  font-weight: 500;
+  margin: 18px 0px 0px 50px;
+  padding-bottom: 2px;
+}
+
+.Short_cut {
+  margin: 0px;
+  font-size: medium;
+  font-weight: 500;
+  color: rgb(106, 106, 106);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --------------Term And Condition------------ */
+.term-con {
+  font-size: smaller;
+  margin: 0%;
+  color: grey;
+}
+
+/* --------------------------Aside_Left-End----------------------- */
+/* ----------------------------Center Div start --------------------------------- */
+.center_div {
+  overflow: auto;
+  width: 60%;
+  height: 535px;
+}
+
+.card-profile {
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+
+.Card1 {
+  margin: 30px 0px 0px 20px;
+  width: 20%;
+  height: 230px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.Profile_image {
+  display: inline-block;
+  background-image: url(./Asset/shubham_pic.jpg);
+  position: relative;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 170px;
+  background-size: cover;
+}
+
+.buttonadd {
+  width: 25px;
+  height: 25px;
+  border: 5px solid white;
+  border-radius: 25px;
+  background-color: #0866ff;
+  border: none;
+  color: white;
+  margin: -10px 0px 0px 60px;
+}
+
+.Story-text {
+  margin: 0px;
+  text-align: center;
+  font-weight: 500;
+  font-size: medium;
+}
+
+/* -------------------Remaining Profile picture--------- */
+.Profile_Status {
+  width: 100%;
+  height: 230px;
+  background-size: cover;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.Profile_Status:hover {
+  width: 101%;
+  height: 231px;
+  background-size: cover;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* ---------------------------------------End of Profile------------------------------- */
+.message_div {
+  padding: 15px;
+  margin-left: 70px;
+  width: 70%;
+  height: 100px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+.main_box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile_sym {
+  background-image: url(./Asset/shubham_pic.jpg);
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+  border-radius: 25px;
+  margin: 0%;
+}
+
+.Input_messagediv {
+  width: 85%;
+  height: 35px;
+}
+
+.Input_message1 {
+  border-radius: 30px;
+  padding: 3px;
+  margin-left: 100px;
+  margin: auto;
+  width: 90%;
+  border: none;
+  background-color: rgba(169, 169, 169, 0.233);
+  height: 35px;
+  border-color: rgba(132, 151, 158, 0.1);
 }
 
 
+.Input_message1:hover {
+  border: 1px #0866ff;
+  background-color: rgba(169, 169, 169, 0.233);
+}
 
-  
+.container_que {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.symbol_icon {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 25%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.symbol_icon:hover {
+  background-color: rgba(169, 169, 169, 0.233);
+}
+
+.symbol_image {
+  /* position: absolute; */
+  margin: auto;
+  margin-left: 8px;
+  width: 30px;
+  height: 30px;
+}
+
+.text_p {
+  width: 59%;
+  height: 40px;
+  display: inline-block;
+}
+
+.symbol_text {
+  font-size: small;
+  display: inline-block;
+  margin: 10px 0px 0px 0px;
+  color: gray;
+  font-weight: 400;
+}
+
+/* ---------------------post section start---------------------- */
+.post_div {
+  padding: 15px;
+  margin-left: 70px;
+  width: 70%;
+  height: 580px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.P_Profilediv {
+  width: 30%;
+  height: 43px;
+  display: flex;
+}
+
+.image_d {
+  width: 39%;
+  height: 30px;
+  display: inline-block;
+}
+
+.Profile_text {
+  padding-left: 5px;
+  display: inline-block;
+  font-size: small;
+  font-weight: 600;
+}
+
+.profile_11 {
+  color: gray;
+  font-size: small;
+  margin: 0%;
+}
+
+.profile_containt {
+  margin-top: 8px;
+  width: 90%;
+  height: 70px;
+}
+
+.profile_hash {
+  color: rgba(8, 112, 239, 0.905);
+  margin: 0%;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.post {
+  border-radius: 4px;
+  width: 100%;
+  height: 400px;
+}
+
+.post_img {
+  border-radius: 4px;
+  width: 100%;
+  height: 400px;
+}
+
+.post_likeSVG {
+  display: flex;
+  margin-top: 4px;
+  width: 80%;
+  height: 20px;
+}
+
+.SVG_icon {
+  width: 9%;
+  height: 20px;
+}
+
+.like_thum {
+  padding-top: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.love_thum {
+  margin-top: -10px;
+  margin-left: -8px;
+  width: 18px;
+  height: 18px;
+}
+
+.post_t {
+  width: 210px;
+  height: 20px;
+}
+
+.post_text {
+  color: rgb(106, 104, 104);
+  margin: 0px;
+  width: 200px;
+  font-size: smaller;
+}
+
+.post_like {
+  justify-content: space-between;
+  display: flex;
+  height: 40px;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+.like_profile {
+  justify-content: center;
+  display: flex;
+  height: 40px;
+  width: 32%;
+  /* border: 1px solid black; */
+}
+
+.like_SVG {
+  padding-top: 3px;
+  display: inline-block;
+  height: 20px;
+  width: 23px;
+
+}
+
+.text_like {
+  font-weight: 600;
+  font-size: medium;
+  color: gray;
+  padding-left: 5px;
+  margin-top: 2px;
+  height: 20px;
+  display: inline-block;
+}
+
+/* ----------------------second div post--------------------- */
+.profile_sym12 {
+  background-image: url(./Asset/avishkar_dp.jpg);
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+  border-radius: 25px;
+  margin: 0%;
+}
+
+/* ------------------------------Reels Section ---------------------------------- */
+.reels_div {
+  justify-content: space-between;
+  padding: 15px;
+  margin-left: 70px;
+  width: 70%;
+  height: 279px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.reels_icon {
+  display: flex;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 30px;
+}
+
+.reels_iconSVG {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+
+.reels_icontext {
+  margin-left: 5px;
+  display: inline-block;
+  height: 30px;
+  width: 50%;
+}
+
+.reels_create {
+  margin-left: 63px;
+  /* display: inline-block; */
+  display: flex;
+  height: 30px;
+  width: 30%;
+}
+
+.three_dot {
+  margin-left: 50px;
+  height: 30px;
+  width: 30px;
+}
+
+.Reels_cretetxt {
+  padding-left: 50px;
+  margin: 0%;
+  color: rgba(8, 112, 239, 0.905);
+  font-weight: 500;
+  width: 20px;
+}
+
+.reels_subdiv {
+  border-radius: 10px;
+  display: inline-block;
+  width: 32%;
+  height: 245px;
+}
+
+.reels_pic {
+  border-radius: 10px;
+  width: 100%;
+  height: 245px;
+  background-size: cover;
+}
+
+.reels_sec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reels_svg {
+  height: 30px;
+  width: 30px;
+}
+
+.reels_para {
+  font-weight: 500;
+  margin: 0px;
+  width: 70%;
+}
+
+.text_reels {
+  font-weight: 600;
+  color: white;
+  margin: 0%;
+  font-size: small;
+  padding: 217px 0px 0px 10px;
+}
+
+/* -----------------------------Center Div End----------------------------------- */
+.aside_right {
+  border: 1px solid black;
+  overflow: auto;
+  width: 25%;
+  height: 535px;
+}
+
+.sponcer_div {
+  padding: 3px;
+  width: 233px;
+  height: 195px;
+  /* border: 1px solid black; */
+}
+
+.sponcer_text {
+  /* margin-top: 30px; */
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  /* border: 1px solid black; */
+}
+
+.sponcer_content12 {
+  height: 70px;
+  width: 100%;
+  /* border: 1px solid black; */
+  margin-top: 0px;
+  display: flex;
+}
+
+.sponcer_image12 {
+  display: inline-block;
+  /* border: 1px solid black; */
+  height: 60px;
+  width: 40%;
+  margin: 4px 0px 0px 7px;
+}
+
+.sponcer_text12 {
+  /* padding-left: 5px; */
+  border-radius: 2px;
+  display: inline-block;
+  /* border: 1px solid black; */
+  height: 70px;
+  width: 52%;
+  margin: 0px 7px 0px 3px;
+}
+
+.Sponcer_img12 {
+  border-radius: 2px;
+  height: 60px;
+  width: 100%;
+}
+
+.Sponcer_txt12 {
+  padding-left: 13px;
+  margin: 0px;
+  font-size: large;
+  font-weight: 500;
+  color: rgb(106, 106, 106);
+}
+
+.sponcer_imgtxt {
+  margin: 0px;
+  font-weight: 600;
+}
+
+/* ------------------------Sponcer End ------------------------ */
+.Myprofile_div {
+
+  padding-left: 5px;
+  width: 90%;
+  /*------------- */
+  height: 130px;
+  margin: 0px;
+}
+
+.profile_text {
+  margin-top: 4px;
+  width: 100%;
+  height: 30px;
+}
+
+.profile_txt12 {
+  padding-left: 6px;
+  margin: 0px;
+  font-size: medium;
+  font-weight: 500;
+  color: rgb(106, 106, 106);
+}
+
+.Profile_accont {
+  width: 100%;
+  height: 110px;
+}
+
+.profile_div {
+  display: flex;
+  margin-top: 2px;
+  width: 100%;
+  height: 32px;
+}
+
+.profile_img02 {
+  padding: 0px 0px 0px 2px;
+  margin-left: 0px;
+  display: inline-block;
+  height: 30px;
+  width: 35px;
+  /* border: 1px solid black; */
+}
+
+.profile_imgtext02 {
+  margin-left: 5px;
+  display: inline-block;
+  height: 30px;
+  width: 150px;
+}
+
+.profile_img029 {
+  display: inline-block;
+  height: 30px;
+  width: 35px;
+}
+
+.profile_img021 {
+  margin-left: 3px;
+  display: inline-block;
+  height: 30px;
+  width: 45px;
+}
+
+.profile_img022 {
+  margin: 2px;
+  padding-left: 15px;
+  height: 25px;
+  width: 30px;
+}
+
+.profile_Text012 {
+  font-weight: 600;
+  font-size: medium;
+  margin: 2px 0px 1px 0px;
+}
+
+.profile_Text210 {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(110, 109, 109);
+  margin: 5px 0px 1px 3px;
+}
+
+/* ---------------------------Profile Section End ------------------- */
+.Birthday_section {
+  /* border: 1px black solid; */
+  height: 90px;
+}
+
+.Birthday_div {
+  margin: 2px;
+  /* border: 1px black solid; */
+  height: 30px;
+}
+
+.birthday_textdiv {
+  height: 44px;
+  /* border: 1px black solid; */
+  display: flex;
+}
+
+.birth_SVG {
+  height: 44px;
+  width: 20%;
+  display: inline-block;
+  /* border: 1px black solid; */
+
+}
+
+.Birth_txt {
+  height: 40px;
+  width: 75%;
+  display: inline-block;
+  /* border: 1px black solid; */
+}
+
+.profile_img629 {
+  padding: 2px;
+  margin: 3px;
+  display: inline-block;
+  height: 28px;
+  width: 33px;
+}
+
+.Birth_text {
+  margin: 0px;
+  width: 190px;
+  font-size: 14px;
+}
+
+/* --------------------------contact section --------------- */
+.Friendreq_div {
+  margin: 5px;
+  width: 96%;
+  height: 120px;
+}
+
+.friend_name12 {
+justify-content: space-between;
+display: flex;
+width: 100%;
+}
+
+.friend_seeall {
+  display: inline-block;
+  height: 25px;
+  width: 40%;
+
+}
+.friend_alltxt{
+  font-size: 14px;
+  color: #0866ff;
+  margin: 0px;
+  padding-left: 45px;
+}
+.friend_profile{
+  padding: 3px;
+  width: 97%;
+  height: 40px;
+  display: flex;
+}
+.friend_pic{
+  display: inline-block;
+  height: 40px;
+  width: 15%;
+  border-radius: 25px;
+  margin-left: 4px;
+  background-image: url(./Asset/avishkar_dp.jpg);
+  background-size: cover;
+}
+.friend_name{
+  display: inline-block;
+  height: 40px;
+  width: 50%;
+margin-left: 4px;
+}
+.friend_active{
+  display: inline-block;
+  height: 40px;
+  width: 20%;
+  margin-left: 10px;
+}
+.friend_txt{
+  margin: 5px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(89, 89, 89);
+}
+.friend_act12{
+  font-size: 14px;
+  color: #0866ff;
+  margin: 0px;
+  padding-left: 5px;
+}
+.friend_button{
+  justify-content: space-between;
+  display: flex;
+  width: 97%;
+  height: 40px;
+  margin: 2px;
+}
+.friend_conferm{
+  display: inline-block;
+  margin-left: 50px;
+  width: 37%;
+  background-color: #0866ff;
+  height: 30px;
+  border-radius: 6px;
+  /* margin: 5px; */
+}
+.friend_con12{
+  margin: 3px 3px 3px 18px;
+  color: white;
+}
+.friend_delet{
+  display: inline-block;
+  height: 30px;
+  width: 37%;
+  border-radius: 6px;
+  padding-left: 2px;
+  background-color: rgba(120, 120, 120, 0.16);
+}
+.friend_Del12{
+  margin: 3px 3px 3px 18px;
+  color: rgba(0, 0, 0, 0.53);
+  font-weight: 600;
+}
