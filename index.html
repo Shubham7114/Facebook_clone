@@ -11,21 +11,41 @@
 <body>
 
     <div class="Navbar">
-        <img class="face_logo" src="./Asset/Facebook-logo.png" alt="facebook-icon">
-        <a>
-            <!-- Here's the inline SVG icon -->
-            <svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 19.9 19.7">
-                <g class="search-path" fill="none" stroke="#848F91">
-                    <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
-                    <circle cx="8" cy="8" r="7" />
-                </g>
-            </svg>
-        </a>
-        <img class="home_icon" src="./Asset/Home_icon.png" alt="">
-        <img class="vidio_icon" src="./Asset/vidio_icon-nav.png" alt="vidio_camera">
-        <img class="Nav_icon-center" src="./Asset/Shop-nav.png" alt="vidio_camera">
-        <img class="Nav_icon-center" src="./Asset/group_nav.png" alt="vidio_camera">
+        <div class="navbar_fcicon">
+            <img class="face_logo" src="./Asset/Facebook-logo.png" alt="facebook-icon">
+            <a>
+                <!-- Here's the inline SVG icon -->
+                <svg class="svg-icon search-icon" aria-labelledby="title desc" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7">
+                    <g class="search-path" fill="none" stroke="#848F91">
+                        <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+                        <circle cx="8" cy="8" r="7" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="navbar_centericon">
+            <img class="home_icon" src="./Asset/Home_icon.png" alt="">
+            <img class="vidio_icon" src="./Asset/vidio_icon-nav.png" alt="vidio_camera">
+            <img class="Nav_icon-center" src="./Asset/Shop-nav.png" alt="vidio_camera">
+            <img class="Nav_icon-center" src="./Asset/group_nav.png" alt="vidio_camera">
+        </div>
+        <div class="navbar_rightside">
+            <div class="menu_nav">
+                <img class="navbar_icon" src="./Asset/app_menu.png" alt="">
+            </div>
+            <div class="menu_nav">
+                <img class="navbar_icon" src="./Asset/messanger.png" alt="">
+            </div>
+            <div class="menu_nav">
+                <img class="navbar_icon" src="./Asset/bell_icon.png" alt="">
+            </div>
+            <div class="profle_icon">
+                
+            </div>
+
+        </div>
+
     </div>
     <!-- -----------------------------NAVBAR END----------------------- -->
     <!-- ------------------------------LEFT ASIDE START---------------------- -->
@@ -135,7 +155,7 @@
                     </div>
                 </div>
                 <div class="profile_containt">
-                    दारू ची नशा चढली तर सकाळ पर्यंत उतरते, पण आमची नशा एकदा जर चढली ना तर आयुष्यभर उतरत नाही. <br>
+                    A throwback to simpler times when my only worry was which toy to play with. <br>
                     <p class="profile_hash">#SelfLove #MyLifeMyRuels #MyAttitude👫</p>
                 </div>
                 <div class="post">
@@ -239,7 +259,7 @@
 
             </div>
 
-<!-- -----------------------------Reels Section ----------------- -->
+            <!-- -----------------------------Reels Section ----------------- -->
             <div class="reels_div">
                 <div class="reels_icon">
                     <div class="reels_iconSVG"><img class="reels_svg" src="./Asset/reels_icon.png" alt=""></div>
@@ -271,7 +291,7 @@
                 </div>
             </div>
 
-<!-- ---------------------------- Post Div 3 start--------------- -->
+            <!-- ---------------------------- Post Div 3 start--------------- -->
             <div class="post_div">
                 <div class="P_Profilediv">
                     <div class="profile_sym12">
@@ -328,7 +348,7 @@
                 </div>
 
             </div>
-<!-- -----------------------------post div 4 start -------------- -->
+            <!-- -----------------------------post div 4 start -------------- -->
             <div class="post_div">
                 <div class="P_Profilediv">
                     <div class="profile_sym">
@@ -386,10 +406,10 @@
 
             </div>
         </div>
-<!-- ------------------------------ 3 Div Start------------------------- -->
+        <!-- ------------------------------ 3 Div Start------------------------- -->
         <div class="aside_right">
 
-<!-- ----------------------------Sponcer Div Start---------------------- -->
+            <!-- ----------------------------Sponcer Div Start---------------------- -->
             <div class="sponcer_div">
                 <div class="sponcer_text">
                     <p class="Sponcer_txt12">Sponcer</p>
@@ -414,7 +434,7 @@
                 </div>
                 <hr>
             </div>
- <!-- -------------------------------  Page And My Profile Start ------------------ -->
+            <!-- -------------------------------  Page And My Profile Start ------------------ -->
             <div class="Myprofile_div">
                 <div class="profile_text">
                     <p class="profile_txt12">Your Pages and profiles</p>
@@ -422,7 +442,7 @@
                 <div class="Profile_accont">
                     <div class="profile_div">
                         <div class="profile_img02">
-                          <img class="profile_img029" src="./Asset/person_svg.png" alt="">
+                            <img class="profile_img029" src="./Asset/person_svg.png" alt="">
                         </div>
                         <div class="profile_imgtext02">
                             <p class="profile_Text012">Mr.Shubham_7114</p>
@@ -449,8 +469,8 @@
                 </div>
             </div>
             <hr>
- <!-- ----------------------- Birthday Section start ----------------------- -->
-              <div class="Birthday_section">
+            <!-- ----------------------- Birthday Section start ----------------------- -->
+            <div class="Birthday_section">
                 <div class="Birthday_div">
                     <p class="profile_txt12">Birthdays</p>
                 </div>
@@ -459,47 +479,59 @@
                         <img class="profile_img629" src="./Asset/Birthday_SVG.png" alt="">
                     </div>
                     <div class="Birth_txt">
-                      <p class="Birth_text"><b>Pratik Jaykar</b> and <b>15 other</b> have their birthdays today.</p>
+                        <p class="Birth_text"><b>Pratik Jaykar</b> and <b>15 other</b> have their birthdays today.</p>
                     </div>
                 </div>
                 <hr>
-              </div>
- <!-- ------------------------ Contact Section start --------------------- -->
-  <div class="Friendreq_div">
-    <div class="friend_name12">
-        <div class="profile_txt12">
-           Friend Request
-        </div>
-        <div class="friend_seeall">
-            <p class="friend_alltxt">
-              See All
-            </p>
-        </div>
-    </div>
-    <div class="friend_profile">
-        <div class="friend_pic">
+            </div>
+            <!-- ------------------------ Contact Section start --------------------- -->
+            <div class="Friendreq_div">
+                <div class="friend_name12">
+                    <div class="profile_txt12">
+                        Friend Request
+                    </div>
+                    <div class="friend_seeall">
+                        <p class="friend_alltxt">
+                            See All
+                        </p>
+                    </div>
+                </div>
+                <div class="friend_profile">
+                    <div class="friend_pic">
 
-        </div>
-        <div class="friend_name">
-                  <p class="friend_txt">
-                         Sachin Chopde
-                  </p>
-        </div>
-        <div class="friend_active">
-              <p class="friend_act12">17h <b>·</b> </p>
-        </div>
-    </div>
-<div class="friend_button">
-    <div class="friend_conferm">
-         <p class="friend_con12">Confirm</p>
-    </div>
-    <div class="friend_delet">
-        <p class="friend_Del12">Delete</p>
-    </div>
-</div>
+                    </div>
+                    <div class="friend_name">
+                        <p class="friend_txt">
+                            Sachin Chopde
+                        </p>
+                    </div>
+                    <div class="friend_active">
+                        <p class="friend_act12">17h <b>·</b> </p>
+                    </div>
+                </div>
+                <div class="friend_button">
+                    <div class="friend_conferm">
+                        <p class="friend_con12">Confirm</p>
+                    </div>
+                    <div class="friend_delet">
+                        <p class="friend_Del12">Delete</p>
+                    </div>
+                </div>
 
-  </div>
-               
+            </div>
+            <hr>
+            <!-- --------------------------Friend Request Section Start --------------- -->
+            <div class="friend_request">
+                <div class="friend_name12">
+                    <div class="profile_txt12">
+                        Contact
+                    </div>
+                    <div class="friend_seeall">
+                        <img class="Serch_icon" src="./Asset/search-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
